@@ -1,17 +1,15 @@
 #!/usr/bin/python3 
 
-"""
-server.py: Example of MQTT subscription, where received data from multiple topics at host
-           "broker.hivemq.com" is printed in the terminal.
-"""
-
-# Import directives:
+##########################################################################################
+# server.py: Example of MQTT subscription, where received data from multiple topics at
+#            host "broker.hivemq.com" is printed in the terminal.
+##########################################################################################
 import paho.mqtt.client as mqtt 
 
 def client_on_connect(client, data, flags, result_code):
    """
    client_on_connect: Printing status after connection attempt, indicated via the result code,
-                      where result_code != 0 indicates an error.
+                      where result_code != 0 indicates an error. едц
    """
    if (result_code):
       print("Could not connect to host " + str(client._host) + "!\n")
